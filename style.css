@@ -14,15 +14,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(bg.jpg);
+    background-image: url(sky.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .main {
-    width: 30rem;
-    height: 38rem;
+    width: 70rem;
+    height: 35rem;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: cen;
 }
 
 .cityContainer .city {
@@ -233,3 +233,4 @@ body {
         transform: rotate(360deg);
     }
 }
+
