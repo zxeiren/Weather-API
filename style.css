@@ -35,13 +35,13 @@ body {
     border-image-repeat: round;
 }
 
-.cloud3 {
+.cloud {
     position: absolute;
     top: 75px;
     left: -50px;
 }
 
-.cloud3 img {
+.cloud img {
     width: 2.5rem;
     opacity: 60%;
 }
@@ -233,4 +233,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
