@@ -10,7 +10,7 @@ document.getElementById('search').addEventListener('click', () => {
 
 async function checkWeather(e) {
     try {
-        const apiKey = '5bd72fcd09c998285(KEY)ceaa7950e21421f'
+        const apiKey = '5bd72fcd09c998285ceaa7950e21421f'
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e}&appid=${apiKey}&units=metric`);
 
         if (!response.ok) throw new Error(err)
@@ -21,7 +21,7 @@ async function checkWeather(e) {
         const cityName = data.name
         const country = data.sys.country
         const getCelsius = Math.ceil(temp)
-        const getFahren = Math.ceil(temp) 
+        const getFahren = Math.ceil(temp * 9/5 + 32)
 
         document.querySelector('.city').textContent = cityName
         document.querySelector('.country').textContent = country
